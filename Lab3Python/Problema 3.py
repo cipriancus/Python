@@ -1,0 +1,5 @@
+cheile_comune_dar_cu_valori_diferite=list()
+cheile_care_se_gasesc_doar_in_primul_dict=list()
+cheile_care_se_gasesc_doar_in_al_doilea_dict=list()
+
+def parse_dictionary(first,second):
