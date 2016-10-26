@@ -1,5 +1,3 @@
-from _operator import itemgetter
-
 
 def getRuleNo(rule,dictionary_rules):
     for iterator in range(0,len(dictionary_rules)):

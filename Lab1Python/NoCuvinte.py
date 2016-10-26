@@ -1,13 +1,13 @@
 def noCuvinte(sir):
-    separatori=", ;, ? ! . ";
     cuvant=0;
-    sir.replace()
+    previousCH="";
+    for iterator in sir:
+        if previousCH not in ", ;,?!." and iterator in ", ;,?!.":
+            cuvant=cuvant+1
+        previousCH = iterator
 
-    for iterator in range(0,len(sir)):
-        if separatori.__contains__(sir.index(iterator)):
-            if()
+    return cuvant
 
 
 
-
-print(noCuvinte("ciprian e "));
+print(noCuvinte(" ciprian e,,,ana    e; "));

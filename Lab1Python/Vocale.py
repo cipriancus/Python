@@ -4,11 +4,11 @@ def vocale(sir):
     sir=sir.lower();
 
     for iterator in sir:
-        if sirVocale.__contains__(iterator):
+        if iterator in sirVocale:
             return 1;
 
     return 0;
 
 
-print(vocale("sss"));
+print(vocale("a"));
 
