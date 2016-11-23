@@ -20,4 +20,12 @@ def parse_and_write(directory_path, file_path):
             write_in_file.write(str(os.path.join(root, iterator)) + "|" + "FILE\n")
 
 
-parse_and_write("D:\\Seriale", "D:\\a.txt")
+#full path : D:/Folder  D:/Folder/file.txt
+try:
+    args = raw_input("ENTER PATH and file (separated by space): ")
+    args = args.split(" ")
+    parse_and_write(args[0], args[1])
+except:
+    raise Exception("Something is wrong")
+
+#parse_and_write("D:\\Seriale", "D:\\a.txt")
