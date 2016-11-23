@@ -1,5 +1,5 @@
 import os
-
+from pip._vendor.distlib.compat import raw_input
 
 def parse_and_write(directory_path, file_path):
     if os.path.isdir(directory_path) == False:
