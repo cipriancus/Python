@@ -4,7 +4,6 @@ import time
 def afisare_infinity(a,b):
     start_time=time.time()
 
-
     while True:
         x = random.randint(a, b)  # x secunde
         time.sleep(x)
