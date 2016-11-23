@@ -24,8 +24,10 @@ def parse_and_write(directory_path, file_path):
 try:
     args = raw_input("ENTER PATH and file (separated by space): ")
     args = args.split(" ")
-    parse_and_write(args[0], args[1])
+    if len(args) == 2:
+        parse_and_write(args[0], args[1])
+    else:
+        raise Exception("2 arg: path and file")
 except:
     raise Exception("Something is wrong")
-
 #parse_and_write("D:\\Seriale", "D:\\a.txt")
